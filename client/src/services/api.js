@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/subscriptions';
+const API_URL = 'https://subscription-tracker-cf56.onrender.com/api/subscriptions';
 
 export const getSubscriptions = async (userId) => {
     const response = await axios.get(`${API_URL}/${userId}`);
